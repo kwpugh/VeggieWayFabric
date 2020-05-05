@@ -1,6 +1,0 @@
-{
-   "parent": "item/handheld",
-   "textures": {
-       "layer0": "veggie_way:item/large_pot"
-   }
-}

@@ -2,14 +2,14 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "veggie_way:mill"
+            "item": "minecraft:water_bucket"
         },
         {
-            "tag": "c:grain"
+            "item": "veggie_way:soybean"
         }
     ],
     "result": {
-        "item": "veggie_way:flour",
+        "item": "veggie_way:fresh_tofu",
         "count": 1
     }
 }

@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.kwpugh.veggie_way.init.BlockInit;
+import com.kwpugh.veggie_way.init.Compostables;
 import com.kwpugh.veggie_way.init.ItemInit;
 import com.kwpugh.veggie_way.util.VeggieWayConfig;
 
@@ -34,6 +35,8 @@ public class VeggieWay implements ModInitializer
 
         BlockInit.init();
         ItemInit.init();
+        
+        Compostables.init();
     }
     
     public static VeggieWayConfig getConfig()

@@ -4,6 +4,8 @@ import com.kwpugh.veggie_way.VeggieWay;
 import com.kwpugh.veggie_way.items.*;
 import com.kwpugh.veggie_way.lists.FoodList;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.item.MushroomStewItem;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
@@ -13,13 +15,12 @@ import static com.kwpugh.veggie_way.VeggieWay.MOD_ID;
 
 public class ItemInit
 {
-	public static final ItemKnife KNIFE = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "knife"), new ItemKnife(new Item.Settings().maxDamage(128).group(VeggieWay.veggie_way)));
+	public static final ItemKnife KNIFE = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "knife"), new ItemKnife(new Item.Settings().maxDamage(250).group(VeggieWay.veggie_way)));
 	public static final ItemHandRake HAND_RAKE = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "hand_rake"), new ItemHandRake(ToolMaterials.IRON, -2, -3, new Item.Settings().group(VeggieWay.veggie_way)));
-	public static final ItemHandScraper HAND_SCRAPER = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "hand_scraper"), new ItemHandScraper(new Item.Settings().maxDamage(128).group(VeggieWay.veggie_way)));
+	public static final ItemHandScraper HAND_SCRAPER = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "hand_scraper"), new ItemHandScraper(new Item.Settings().maxDamage(250).group(VeggieWay.veggie_way)));
 	public static final Item BAMBOO_SHEET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "bamboo_sheet"), new Item(new Item.Settings().group(VeggieWay.veggie_way)));
 	public static final Item LARGE_BAMBOO_SHEET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "large_bamboo_sheet"), new Item(new Item.Settings().group(VeggieWay.veggie_way)));	
 	
-	public static final ItemLargePot LARGE_POT = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "large_pot"), new ItemLargePot(new Item.Settings().maxCount(1).group(VeggieWay.veggie_way)));	
 	public static final Item FRESH_TOFU = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "fresh_tofu"), new Item(new Item.Settings().group(VeggieWay.veggie_way)));
 	public static final Item COOKED_TOFU = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cooked_tofu"), new Item(new Item.Settings().group(VeggieWay.veggie_way)));
 	
@@ -70,7 +71,8 @@ public class ItemInit
 	
 	public static final Item ENERGY_BAR = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "energy_bar"), new Item(new Item.Settings().food(FoodList.energy_bar).group(VeggieWay.veggie_way)));
 	public static final Item SUPERFOOD_BAR = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "superfood_bar"), new Item(new Item.Settings().food(FoodList.superfood_bar).group(VeggieWay.veggie_way)));
-	public static void init() {
-
+	
+	public static void init()
+	{
 	}
 }

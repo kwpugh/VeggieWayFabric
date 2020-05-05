@@ -2,12 +2,7 @@
 	"replace": false,
 	"values":
 	[
-		"minecraft:beetroot",
-		"minecraft:apple",
-		"minecraft:melon_slice",
-		"minecraft:sweet_berries",
-		"minecraft:honeycomb",
-		"minecraft:sugar_cane",
+		"veggie_way:melon_chunk",
 		"veggie_way:cactus_chunk"
 	]
 }
