@@ -66,7 +66,11 @@ public class ItemHandRake extends ShovelItem
 				{
 					ItemScatterer.spawn(world,pos.getX(),pos.getY(),pos.getZ(),new ItemStack(ItemInit.LENTIL_SEEDS, 1));
 				}
-				else if (r > 0.3)
+				else if (r > 0.3 && r <= 0.4)
+				{
+					ItemScatterer.spawn(world,pos.getX(),pos.getY(),pos.getZ(),new ItemStack(ItemInit.CORN_SEEDS, 1));
+				}
+				else if (r > 0.5)
 				{
 					//Nothing right now
 				}

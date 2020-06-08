@@ -9,6 +9,7 @@ import com.kwpugh.veggie_way.init.BlockInit;
 import com.kwpugh.veggie_way.init.Compostables;
 import com.kwpugh.veggie_way.init.ItemInit;
 import com.kwpugh.veggie_way.util.VeggieWayConfig;
+import com.kwpugh.veggie_way.util.VeggieWayLootTables;
 
 import me.sargunvohra.mcmods.autoconfig1u.AutoConfig;
 import me.sargunvohra.mcmods.autoconfig1u.serializer.GsonConfigSerializer;
@@ -30,13 +31,15 @@ public class VeggieWay implements ModInitializer
     @Override
     public void onInitialize()
     {
-        log(Level.INFO, "Initializing");
+        log(Level.INFO, "VeggieWay Initializing");
         AutoConfig.register(VeggieWayConfig.class, GsonConfigSerializer::new);
 
         BlockInit.init();
         ItemInit.init();
         
         Compostables.init();
+        
+        VeggieWayLootTables.init();
     }
     
     public static VeggieWayConfig getConfig()

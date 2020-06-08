@@ -1,17 +1,43 @@
 package com.kwpugh.veggie_way.init;
 
+import static com.kwpugh.veggie_way.VeggieWay.MOD_ID;
+
 import com.kwpugh.veggie_way.VeggieWay;
-import com.kwpugh.veggie_way.items.*;
+import com.kwpugh.veggie_way.items.DrinkBase;
+import com.kwpugh.veggie_way.items.ItemCactusChunk;
+import com.kwpugh.veggie_way.items.ItemCaffeine;
+import com.kwpugh.veggie_way.items.ItemCarbs;
+import com.kwpugh.veggie_way.items.ItemCropCorn;
+import com.kwpugh.veggie_way.items.ItemCropLentil;
+import com.kwpugh.veggie_way.items.ItemCropQuinoa;
+import com.kwpugh.veggie_way.items.ItemCropSoybean;
+import com.kwpugh.veggie_way.items.ItemDough;
+import com.kwpugh.veggie_way.items.ItemDryingAgent;
+import com.kwpugh.veggie_way.items.ItemEnergyPowder;
+import com.kwpugh.veggie_way.items.ItemFlour;
+import com.kwpugh.veggie_way.items.ItemFructose;
+import com.kwpugh.veggie_way.items.ItemHandRake;
+import com.kwpugh.veggie_way.items.ItemHandScraper;
+import com.kwpugh.veggie_way.items.ItemKnife;
+import com.kwpugh.veggie_way.items.ItemMelonChunk;
+import com.kwpugh.veggie_way.items.ItemMill;
+import com.kwpugh.veggie_way.items.ItemProteins;
+import com.kwpugh.veggie_way.items.ItemPumpkinChunk;
+import com.kwpugh.veggie_way.items.ItemSeedCorn;
+import com.kwpugh.veggie_way.items.ItemSeedLentil;
+import com.kwpugh.veggie_way.items.ItemSeedQuinoa;
+import com.kwpugh.veggie_way.items.ItemSeedSoybean;
+import com.kwpugh.veggie_way.items.ItemSuperPetals;
+import com.kwpugh.veggie_way.items.ItemSuperfoodPowder;
+import com.kwpugh.veggie_way.items.ItemVitamins;
+import com.kwpugh.veggie_way.items.ItemWheatgerm;
 import com.kwpugh.veggie_way.lists.FoodList;
+
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.Items;
 import net.minecraft.item.MushroomStewItem;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
-import static com.kwpugh.veggie_way.VeggieWay.MOD_ID;
 
 public class ItemInit
 {
@@ -23,6 +49,7 @@ public class ItemInit
 	
 	public static final Item FRESH_TOFU = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "fresh_tofu"), new Item(new Item.Settings().group(VeggieWay.veggie_way)));
 	public static final Item COOKED_TOFU = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cooked_tofu"), new Item(new Item.Settings().group(VeggieWay.veggie_way)));
+	public static final Item FRIED_EGG = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "fried_egg"), new Item(new Item.Settings().food(FoodList.fried_egg).group(VeggieWay.veggie_way)));
 	
 	public static final ItemMill MILL = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "mill"), new ItemMill(new Item.Settings().maxDamage(512).group(VeggieWay.veggie_way)));
 	public static final ItemFlour FLOUR = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "flour"), new ItemFlour(new Item.Settings().group(VeggieWay.veggie_way)));
@@ -52,6 +79,9 @@ public class ItemInit
 	
 	public static final ItemSeedLentil LENTIL_SEEDS = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "lentil_seeds"), new ItemSeedLentil(BlockInit.PLANT_LENTIL, (new Item.Settings().group(VeggieWay.veggie_way))));
 	public static final ItemCropLentil LENTIL = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "lentil"), new ItemCropLentil(new Item.Settings().group(VeggieWay.veggie_way)));
+	
+	public static final ItemSeedCorn CORN_SEEDS = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "corn_seeds"), new ItemSeedCorn(BlockInit.PLANT_CORN, (new Item.Settings().group(VeggieWay.veggie_way))));
+	public static final ItemCropCorn CORN = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "corn"), new ItemCropCorn(new Item.Settings().group(VeggieWay.veggie_way)));
 	
 	public static final ItemDryingAgent DRYING_AGENT = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "drying_agent"), new ItemDryingAgent(new Item.Settings().group(VeggieWay.veggie_way)));
 	

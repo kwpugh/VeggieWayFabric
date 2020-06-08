@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "veggie_way:block/corn_plant_stage_2"
+    }
+}

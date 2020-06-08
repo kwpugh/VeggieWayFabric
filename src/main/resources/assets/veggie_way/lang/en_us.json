@@ -1,12 +1,15 @@
 {	
-	"item.veggie_way.quinoa_plant": "Quinoa Plant",
-	"block.veggie_way.quinoa_plant": "Quinoa Plant",
+	"item.veggie_way.plant_quinoa": "Quinoa Plant",
+	"block.veggie_way.plant_quinoa": "Quinoa Plant",
 
-	"item.veggie_way.soybean_plant": "Soybean Plant",
-	"block.veggie_way.soybean_plant": "Soybean Plant",
+	"item.veggie_way.plant_soybean": "Soybean Plant",
+	"block.veggie_way.plant_soybean": "Soybean Plant",
 
-	"item.veggie_way.lentil_plant": "Lentil Plant",
-	"block.veggie_way.lentil_plant": "Lentil Plant",
+	"item.veggie_way.plant_lentil": "Lentil Plant",
+	"block.veggie_way.plant_lentil": "Lentil Plant",
+	
+	"item.veggie_way.plant_corn": "Corn Plant",
+	"block.veggie_way.plant_corn": "Corn Plant",
 			
 	"item.veggie_way.hand_rake": "Hand Rake",
 	"item.veggie_way.hand_rake.line1": "Used on sand to get drying agent",
@@ -23,6 +26,8 @@
 	
 	"item.veggie_way.fresh_tofu": "Fresh Tofu",
 	"item.veggie_way.cooked_tofu": "Cooked Tofu",
+	
+	"item.veggie_way.fried_egg": "Fried Egg",
 	
 	"item.veggie_way.knife": "Knife",
 	"item.veggie_way.knife.line1": "Used on a crafting table to cut things",
@@ -55,6 +60,9 @@
 	"item.veggie_way.lentil_seeds": "Lentil Seeds",	
 	"item.veggie_way.lentil_seeds.line1": "Plant on Farmland to grow Lentil Plant",
 		
+	"item.veggie_way.corn_seeds": "Corn Seeds",	
+	"item.veggie_way.corn_seeds.line1": "Plant on Farmland to grow Corn Plant",
+	
 	"item.veggie_way.quinoa": "Red Quinoa",
 	"item.veggie_way.quinoa.line1": "A wonderful source of protein",
 
@@ -63,7 +71,10 @@
 
 	"item.veggie_way.lentil": "Lentil",
 	"item.veggie_way.lentil.line1": "A wonderful source of protein",
-			
+
+	"item.veggie_way.corn": "Corn",
+	"item.veggie_way.corn.line1": "A wonderful source of carbs",
+					
 	"item.veggie_way.apple_pie": "Apple Pie",
 	"item.veggie_way.melon_pie": "Melon Pie",
 	"item.veggie_way.sweet_berry_pie": "Sweet Berry Pie",

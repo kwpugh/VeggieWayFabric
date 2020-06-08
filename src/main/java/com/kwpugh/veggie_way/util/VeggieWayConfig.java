@@ -31,101 +31,108 @@ public class VeggieWayConfig implements ConfigData
 	public Misc misc = new Misc();
 
 
-	public static class Chunks {
+	public static class Chunks
+	{
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
 		public int melon_chunk_hunger = 2;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int melon_chunk_saturation = 1;
+		public float melon_chunk_saturation = 0.1F;
 
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
 		public int pumpkin_chunk_hunger = 2;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int pumpkin_chunk_saturation = 1;
+		public float pumpkin_chunk_saturation = 0.1F;
 
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
 		public int cactus_chunk_hunger = 2;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int cactus_chunk_saturation = 1;
-
+		public float cactus_chunk_saturation = 0.1F;
 	}
-	public static class Pies {
+	
+	public static class Pies
+	{
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
-		public int apple_pie_hunger = 7;
+		public int apple_pie_hunger = 6;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int apple_pie_saturation = 2;
-
-		@ConfigEntry.BoundedDiscrete(min=0,max=30)
-		public int melon_pie_hunger = 7;
-		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int melon_pie_saturation = 2;
+		public float apple_pie_saturation = 0.2F;
 
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
-		public int berry_pie_hunger = 7;
+		public int melon_pie_hunger = 6;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int berry_pie_saturation = 2;
+		public float melon_pie_saturation = 0.2F;
 
-
+		@ConfigEntry.BoundedDiscrete(min=0,max=30)
+		public int berry_pie_hunger = 6;
+		@ConfigEntry.BoundedDiscrete(min=0,max=10)
+		public float berry_pie_saturation = 0.2F;
 	}
-	public static class Soups {
-
+	
+	public static class Soups
+	{
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
 		public int pumpkin_soup_hunger = 6;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int pumpkin_soup_saturation = 1;
+		public float pumpkin_soup_saturation = 0.3F;
 
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
 		public int cactus_soup_hunger = 6;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int cactus_soup_saturation = 1;
+		public float cactus_soup_saturation = 0.3F;
 
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
 		public int melon_soup_hunger = 6;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int melon_soup_saturation = 1;
+		public float melon_soup_saturation = 0.3F;
 
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
 		public int carrot_soup_hunger = 6;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int carrot_soup_saturation = 1;
-
+		public float carrot_soup_saturation = 0.3F;
 	}
-	public static class SuperFoods {
+	
+	public static class SuperFoods
+	{
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
 		public int super_petals_hunger = 6;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int super_petals_saturation = 9;
+		public float super_petals_saturation = 0.8F;
 
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
 		public int energy_drink_hunger = 9;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int energy_drink_saturation = 2;
+		public float energy_drink_saturation = 0.2F;
 
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
 		public int shake_hunger = 10;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int shake_saturation = 3;
+		public float shake_saturation = 0.3F;
 
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
 		public int smoothie_hunger = 10;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int smoothie_saturation = 3;
+		public float smoothie_saturation = 0.3F;
 
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
-		public int energyBar_hunger = 13;
+		public int energyBar_hunger = 10;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int energyBar_saturation = 4;
+		public float energyBar_saturation = 0.4F;
 
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
-		public int superFoodBar_hunger = 13;
+		public int superFoodBar_hunger = 12;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int superFoodBar_saturation = 4;
+		public float superFoodBar_saturation = 0.8F;
 	}
-	public static class Misc {
-
+	
+	public static class Misc
+	{
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
-		public int chocolate_bar_hunger = 7;
+		public int chocolate_bar_hunger = 4;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
-		public int chocolate_bar_saturation = 2;
+		public float chocolate_bar_saturation = 0.2F;
+		
+		@ConfigEntry.BoundedDiscrete(min=0,max=30)
+		public int fried_egg_hunger = 3;
+		@ConfigEntry.BoundedDiscrete(min=0,max=10)
+		public float fried_egg_saturation = 0.2F;
 	}
-
 }

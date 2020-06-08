@@ -11,10 +11,12 @@ public class Compostables
 		registerCompostableItem(ItemInit.LENTIL_SEEDS, 0.3F);
 		registerCompostableItem(ItemInit.QUINOA_SEEDS, 0.3F);
 		registerCompostableItem(ItemInit.SOYBEAN_SEEDS, 0.3F);
+		registerCompostableItem(ItemInit.CORN_SEEDS, 0.3F);
 		
 		registerCompostableItem(ItemInit.LENTIL, 0.65F);
 		registerCompostableItem(ItemInit.QUINOA, 0.65F);
 		registerCompostableItem(ItemInit.SOYBEAN, 0.65F);
+		registerCompostableItem(ItemInit.CORN, 0.65F);
 	}
 	
 	public static void registerCompostableItem(ItemConvertible item, float chance)
